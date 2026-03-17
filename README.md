@@ -29,7 +29,7 @@ To keep the latency near zero (around 1-2ms) and the compute power high, the sys
 ### 1. The Wireless "Smart Glove" (Transmitter)
 Designed to be tiny, wearable, and entirely battery-powered.
 * **Brain:** ESP32-C3 SuperMini (160MHz RISC-V) - Fast enough for ML inference.
-* **Sensor:** MPU6050 (6-Axis Accelerometer & Gyroscope).
+* **Sensor:** MPU9250 (6-Axis Accelerometer & Gyroscope).
 * **Radio:** NRF24L01+ (For instant, lag-free communication).
 * **Power:** 3.7V LiPo Battery.
 
@@ -78,8 +78,8 @@ If you are recreating this, be careful with the SuperMini pins! Here is the base
 
 | Component | ESP32-C3 SuperMini Pin | Note |
 | :--- | :--- | :--- |
-| MPU6050 SDA | GPIO 8 | Data Line |
-| MPU6050 SCL | GPIO 9 | Clock Line |
+| MPU9250 SDA | GPIO 8 | Data Line |
+| MPU9250 SCL | GPIO 9 | Clock Line |
 | VCC | 3.3V | Do not use 5V for the IMU! |
 | GND | GND | Common Ground |
 
